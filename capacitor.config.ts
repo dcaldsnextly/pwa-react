@@ -3,7 +3,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 const config: CapacitorConfig = {
   appId: 'com.reactpwa.app',
   appName: 'React PWA',
-  webDir: 'build',
+  webDir: 'dist',
   bundledWebRuntime: true
 };
 
