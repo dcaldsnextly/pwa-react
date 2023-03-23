@@ -1,0 +1,20 @@
+.counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.counter .title {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.counter .count {
+    background-color: var(--gray-400);
+    border-radius: 50px;
+    font-weight: 700;
+    line-height: 18px;
+    font-size: 12px;
+    padding: 0 6px;
+}

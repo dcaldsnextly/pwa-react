@@ -1,0 +1,82 @@
+.todo {
+    background-color: var(--gray-500);
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 26px;
+}
+
+.todo .info {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.info input[type="checkbox"] {
+    position: relative;
+    height: 16px;
+    width: 100%;
+    max-width: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+
+    padding: 0;
+    background-color: transparent;
+    border: 2px solid var(--blue);
+
+    transition: .2s ease;
+}
+
+.info input[type="checkbox"]:hover {
+    background-color: var(--blue-dark-fade);
+    border: 2px solid var(--blue-dark);
+}
+
+.info input[type="checkbox"]:checked {
+    background-color: var(--purple);
+    border: 2px solid var(--purple);
+}
+
+.info input[type="checkbox"]:checked:hover {
+    background-color: var(--purple-dark);
+    border: 2px solid var(--purple-dark);
+}
+
+.info input[type="checkbox"]:checked::before {
+    content: '\2714';
+    position: absolute;
+    top: -3px;
+    left: 2px;
+}
+
+.info .titleTodo {
+    color: var(--gray-100);
+}
+
+.info .titleDone {
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.todo .trash {
+    height: 24px;
+    width: 24px;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray-300);
+
+    transition: .2s ease;
+}
+
+.todo .trash:hover {
+    cursor: pointer;
+    background-color: var(--gray-400);
+    color: var(--danger);
+}
